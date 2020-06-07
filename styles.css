@@ -1,0 +1,233 @@
+/*general*/
+body{
+	margin:0;
+	padding:0;
+	background-color: white;
+	font-family: 'Alegreya';
+	font-weight: normal;
+	text-align: center;
+}
+h1{
+	font-weight: normal;
+}
+
+h2{
+	text-align: center;
+	font-weight: normal;
+}
+
+
+/*navbar*/
+
+.navbar{
+	color: white;
+}
+.nav-link{
+color: black;
+}
+.nav-item{
+	color: black;
+}
+.navbar-light{
+	color: black;
+}
+.navbar-nav{
+	color: black;
+	font-size: 1.5em;
+
+}
+.navbar-brand{
+	color: black;
+	font-size: 1.5em;
+	opacity: 1.0;
+
+}
+
+.navbar a:hover{
+    color: black;
+    opacity: 0.75;
+}
+
+/*front page*/
+
+.intro {
+	text-align: center;
+	
+}
+#title img{
+ width: 30%;
+	margin-right: auto;
+ 	margin-left: auto;
+}
+
+#title p{
+	display: inline-block;
+	width: 300px;
+	text-align: center;
+
+}
+
+
+/*skill section */
+
+#skills{
+	position: relative;
+	padding-top: 50px;
+	text-align: center;
+	padding-bottom: 74px;
+
+}
+#skills p{
+	font-style: italic;
+}
+
+.skilldescript{
+	text-align: right;
+	position: absolute;
+	top:200px;
+	right: 100px;
+}
+
+#skills img{
+	height: 90%;
+	width: 90%;
+	margin: auto;
+	margin-left: auto;
+  	margin-right: auto;
+  	display: block;
+  	margin-top: 75px;
+}
+
+
+/*About me section*/
+.aboutme{
+	padding-top: 50px;
+}
+.title-about{
+	font-size: 1.5rem;
+}
+.aboutme p{
+
+	padding-top: 75px;
+	padding-bottom: 150px;
+	margin: auto;
+	font-family: 'Alegreya';
+	text-align: left;
+}
+
+
+.plant2{
+	max-width: 100%;
+	height: auto;
+	
+}
+.plant1{
+
+	position: absolute;
+	bottom: 0px;
+	max-width: 100%;
+	height: auto;
+	left: 0;
+
+}
+.bold {
+	font-weight: bold;
+}
+
+/*portfolio section*/
+#portfolio .row{
+	padding-top: 100px;
+
+}
+
+#portfolio {
+
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+#portfolio img{
+
+	height: 300px;
+	width: 300px;
+
+}
+
+#portfolio img:hover {
+  opacity: 0.5;
+}
+
+.modal img{
+	height: 150px;
+	width: 150px;
+}
+
+ul{
+	text-align: left;
+}
+.modal p{
+	text-align: left;
+	padding-top: 15px;
+}
+.modal-p a{
+margin-left: 0;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+.w-100 {
+  width: 100% !important;
+}
+.align-items-center {
+  align-items: center !important;
+}
+.justify-content-center {
+  justify-content: center !important;
+}
+.d-flex {
+  display: flex !important;
+}
+
+/*Contact section*/
+#contact{
+	text-align: center;
+	padding-bottom: 75px;
+}
+.but{
+	margin-left: 10px;
+}
+
+
+@media (max-width: 991px) {
+
+  .plant1{
+    position: static;
+   	margin-left: auto;
+  	margin-right: auto;
+  	display: block;
+  	width: 70%;
+   
+  }
+  #title img{
+  	width: 50%;
+  }
+  .first{
+  	order: 1;
+  }
+  .last{
+  	order: 3;
+  }
+  .second{
+  	order: 2;
+  }
+  .plant2{
+ margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 70%
+  }
+  .p-about{
+  	width: 70%
+  }
+}
