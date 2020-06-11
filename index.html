@@ -76,7 +76,7 @@
           <!-- Skills Section -->
      <section id="skills">
         <div class="container-fluid">
-                  <h2 >Mon petit jardin</h2>
+                  <h2 >My Little Garden</h2>
             <p >The taller the flower the greater the knowledge and experience</p>
             <img src="Photos/72ppi/skill-graph.png" alt=""/>
       
@@ -188,6 +188,16 @@
 
                                     <p class="mb-5 modal-p">This project uses computer vision techniques(Harris Corner detector, SIFT, RANSAC) in order to stitch together images to create a panorama.  </p>
                                     <h6>The process</h6>
+                                   
+                                        <ol>
+                                            <li>Takes 2 images and finds the keypoints using the Harris Corner Detector(By looking at the gradients of the image to find distinct corners) </li>
+                                            <li>Uses the SIFT descriptor to describe each of these keypoints and compares each images descriptors to find matches using sum of squared differences and ratio of ssd to make sure there were no ambiguous matches</li>
+                                            <li>Next the RANSAC algorithm is used which randomly selects 4 matches to calculate the homography. It then checks the amount of inlier matches with this homography. This algorithm runs over 1000 times and keeps the homography that gives the greatest number of inliers.</li>
+                                            <li>The new image is stitched together by creating a shell of a new image that will fit image 1 and the transformed image 2. Image 1 is copied into the shell and the second image is transformed using the inverse homography into the shell. </li>
+                                            <li>Repeat! 1-4 are repeated until all the images have been added to the panorama by using the last stitched image as one of the images in the next iteration. </li>
+                                        </ol>
+
+                                   
                                     
                                 </div>
                             </div>
@@ -213,7 +223,12 @@
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Autonomous Defense Robot</h2>
                                      <p class="modal-p"> Date: 11-15-2019 - 12-01-2019 <br/> 
 
-                                    <p class="mb-5 modal-p">Designed an autonomous robot to drive and avoid objects using two arduinos and a BeagleBone. Everything was coded using bare metal C programming on the arduinos and python on the BeagleBone. SPI communication was used to communicate between the arduinos and the BeagleBone.  The device tree on the beagle bone  was manually configured for communication. Low level hardware was also used in the design(Level shifts, H-Bridges, Resistors etc)</p>
+                                    <p class="mb-5 modal-p">Designed an autonomous robot to drive and avoid objects and trigger defense mechanism.</p>
+                                    <h6>The details</h6>
+                                    <p>
+                                        This was the final project for my Embedded Systems class. 
+The robot was built using two arduinos, a BeagleBone and necessary hardware(Level shifts, H-Bridges, Resistors, battery, sensors ).  Sensors were connected through the arduinos which would signal the Beaglebone when the robot got too close to an object. The Beaglebone would then communicate to the arduinos to reverse the wheels and change direction. Everything was coded using bare metal C on the arduinos and python on the Beaglebone. The micro controllers communicated using SPI and the device tree on the beagle bone was manually configured for communication. 
+                                    </p>
                                 </div>
                             </div>
                         </div>
