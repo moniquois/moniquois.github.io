@@ -55,9 +55,10 @@ color: black;
 	
 }
 #title img{
- width: 30%;
+ 	width: 25%;
 	margin-right: auto;
- 	margin-left: auto;
+	margin-left: auto;
+	padding-top: 25px;
 }
 
 #title p{
@@ -95,7 +96,8 @@ color: black;
 	margin-left: auto;
   	margin-right: auto;
   	display: block;
-  	margin-top: 75px;
+    margin-top: 75px;
+ 
 }
 
 
@@ -108,7 +110,7 @@ color: black;
 }
 .aboutme p{
 
-	padding-top: 75px;
+	padding-top: 85px;
 	padding-bottom: 150px;
 	margin: auto;
 	font-family: 'Alegreya';
@@ -117,17 +119,21 @@ color: black;
 
 
 .plant2{
-	max-width: 100%;
-	height: auto;
-	
+	/* max-width: 100%;
+	height: auto; */
+	width: 90%;
+	position: absolute;
+	right: 0;
+
 }
 .plant1{
 
 	position: absolute;
 	bottom: 0px;
-	max-width: 100%;
-	height: auto;
-	left: 0;
+	/* max-width: 100%;
+	height: auto; */
+	left: 5px;
+	width: 80%;
 
 }
 .bold {
@@ -222,7 +228,8 @@ margin-left: 0;
   	order: 2;
   }
   .plant2{
- margin-left: auto;
+	position: static;
+	margin-left: auto;
   margin-right: auto;
   display: block;
   width: 70%
